@@ -17,6 +17,7 @@ const AppRoutes = () => {
 		<Router>
 			<Route path='/' element={<Layout />}>
         <Route index element={<MainPage />}/>
+        <Route index element={<p>test</p>}/>
       </Route>
 		</Router>
 	)
