@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Router, Outlet } from 'react-router-dom'
+import { Route, Routes, Outlet } from 'react-router-dom'
 import MainPage from '../pages/HomePage/HomePage'
 
 const Layout = () => {
@@ -14,12 +14,12 @@ const Layout = () => {
 
 const AppRoutes = () => {
 	return (
-		<Router>
+		<Routes>
 			<Route path='/' element={<Layout />}>
         <Route index element={<MainPage />}/>
-        <Route index element={<p>test</p>}/>
+        <Route path='test' element={<p>test</p>}/>
       </Route>
-		</Router>
+		</Routes>
 	)
 }
 
