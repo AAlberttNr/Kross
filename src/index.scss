@@ -1,21 +1,26 @@
+// Montserrat
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+// Ruda
+@import url(https://fonts.googleapis.com/css?family=Ruda:regular,500,600,700,800,900);
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 ol,
 ul {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-  border: 0;
+	border: 0;
 }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 }
