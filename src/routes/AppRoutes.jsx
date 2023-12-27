@@ -5,9 +5,9 @@ import MainPage from '../pages/HomePage/HomePage'
 const Layout = () => {
 	return (
 		<div>
-			Header
+			Header.
 			<Outlet />
-			Footer
+			Footer.
 		</div>
 	)
 }
