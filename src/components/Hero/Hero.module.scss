@@ -1,4 +1,7 @@
 .hero {
+	margin-top: 139px;
+	display: flex;
+	justify-content: space-between;
 	&__left {
 		> h1 {
 			color: #002c6a;
@@ -7,7 +10,7 @@
 			font-weight: 900;
 			line-height: normal;
 			text-transform: uppercase;
-      margin-bottom: 37px;
+			margin-bottom: 37px;
 		}
 		> p {
 			color: #29292d;
@@ -16,23 +19,17 @@
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
-      margin-bottom: 37px;
+			margin-bottom: 37px;
 		}
-		&_button {
-			display: flex;
-			height: 85px;
-			padding: 24px 53px;
-			align-items: center;
-			gap: 10px;
+		&_button > Button {
 			border-radius: 50px;
 			background: linear-gradient(94deg, #ff1818 12.62%, #f2312d 92.9%);
 			box-shadow: 0px 15px 30px 0px rgba(227, 47, 31, 0.15);
 			// text
 			color: #fff;
 			font-size: 24px;
-			font-style: normal;
 			font-weight: 700;
-			line-height: normal;
 		}
 	}
+	
 }
