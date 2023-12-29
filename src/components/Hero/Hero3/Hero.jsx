@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Hero.module.scss'
 import Button from '../../../UI/Button/Button'
-import HeroShoes1 from '../../../assets/img/Hero_Shoes1.png'
+import HeroShoes1 from '../../../assets/img/Hero_Bottom_Red.png'
 import HeroBlueBg from '../../../assets/img/Hero_BlueBg.png'
 // Bottom
 import Hero_Arrow from '../../../assets/img/Hero_Arrow.png'

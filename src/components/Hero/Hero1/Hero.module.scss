@@ -29,5 +29,39 @@
 			font-weight: 700;
 		}
 	}
-	
+	// bottom
+	&__cards {
+		margin-top: 35px;
+		display: flex;
+		justify-content: flex-end;
+		gap: 141px;
+		&_card {
+			position: relative;
+			width: 282px;
+			height: 86px;
+			display: flex;
+			align-items: center;
+			border-radius: 70px;
+			background: #FFF;
+			box-shadow: 5px 15px 32px 0px rgba(22, 92, 191, 0.2);
+			cursor: pointer;
+			.Arrow {
+				position: absolute;
+				top: -35%;
+				right: -12%;
+			}
+			.bottom_shoes {
+				margin-left: -80px;
+				margin-top: -22px;
+			}
+			> h4 {
+				margin-left: 10px;
+				color: #29292d;
+				font-size: 18px;
+				font-weight: 900;
+				line-height: normal;
+				text-transform: uppercase;
+			}
+		}
+	}
 }

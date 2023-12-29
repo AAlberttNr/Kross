@@ -1,8 +1,13 @@
 import React from 'react'
 import css from './Hero.module.scss'
 import Button from '../../../UI/Button/Button'
-import HeroShoes1 from '../../../assets/img/Hero_Shoes1.png'
+import HeroShoes1 from '../../../assets/img/Hero_Bottom_Red.png'
 import HeroBlueBg from '../../../assets/img/Hero_BlueBg.png'
+// Bottom
+import Hero_Arrow from '../../../assets/img/Hero_Arrow.png'
+import bottom_shoes1 from '../../../assets/img/Hero2_Bottom_Yellow.png'
+import bottom_shoes2 from '../../../assets/img/Hero3_Bottom_White.png'
+//
 
 const Hero = () => {
 	return (
@@ -29,8 +34,20 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<div>
-				<div></div>
+			<div className={css.hero__cards}>
+				<div className={css.hero__cards_card}>
+					<img className={css.Arrow} src={Hero_Arrow} />
+					<img className={css.bottom_shoes} width={183} src={bottom_shoes1} />
+					<h4>
+						Adidas <br />
+						Yeezy Boost{' '}
+					</h4>
+				</div>
+				<div className={css.hero__cards_card}>
+					<img className={css.Arrow} src={Hero_Arrow} />
+					<img className={css.bottom_shoes} width={183} src={bottom_shoes2} />
+					<h4>Nike <br/>Air Max</h4>
+				</div>
 			</div>
 		</div>
 	)
