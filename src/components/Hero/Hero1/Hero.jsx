@@ -1,8 +1,8 @@
 import React from 'react'
 import css from './Hero.module.scss'
-import Button from '../../UI/Button/Button'
-import HeroShoes1 from '../../assets/img/Hero_Shoes1.png'
-import HeroBlueBg from '../../assets/img/Hero_BlueBg.png'
+import Button from '../../../UI/Button/Button'
+import HeroShoes1 from '../../../assets/img/Hero_Shoes1.png'
+import HeroBlueBg from '../../../assets/img/Hero_BlueBg.png'
 
 const Hero = () => {
 	return (
