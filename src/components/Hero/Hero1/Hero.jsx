@@ -1,15 +1,11 @@
-import React from 'react'
 import css from './Hero.module.scss'
 import Button from '../../../UI/Button/Button'
+import { Link } from 'react-router-dom'
 import HeroShoes1 from '../../../assets/img/Hero_Bottom_Red.png'
 import HeroBlueBg from '../../../assets/img/Hero_BlueBg.png'
-// Bottom
 import Hero_Arrow from '../../../assets/img/Hero_Arrow.png'
 import bottom_shoes1 from '../../../assets/img/Hero2_Bottom_Yellow.png'
 import bottom_shoes2 from '../../../assets/img/Hero3_Bottom_White.png'
-//
-
-import { Link } from 'react-router-dom'
 
 const Hero = () => {
 	return (
@@ -37,7 +33,7 @@ const Hero = () => {
 			</div>
 
 			<div className={css.hero__cards}>
-				<Link to={'hero2'}>
+				<Link to={'/hero2'}>
 					<div className={css.hero__cards_card}>
 						<img className={css.Arrow} src={Hero_Arrow} />
 						<img className={css.bottom_shoes} width={183} src={bottom_shoes1} />
@@ -47,7 +43,7 @@ const Hero = () => {
 						</h4>
 					</div>
 				</Link>
-				<Link to={'hero3'}>
+				<Link to={'/hero3'}>
 					<div className={css.hero__cards_card}>
 						<img className={css.Arrow} src={Hero_Arrow} />
 						<img className={css.bottom_shoes} width={183} src={bottom_shoes2} />
