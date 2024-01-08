@@ -9,6 +9,8 @@ import bottom_shoes1 from '../../../assets/img/Hero2_Bottom_Yellow.png'
 import bottom_shoes2 from '../../../assets/img/Hero3_Bottom_White.png'
 //
 
+import { Link } from 'react-router-dom'
+
 const Hero = () => {
 	return (
 		<div className='container'>
@@ -26,7 +28,7 @@ const Hero = () => {
 				</div>
 				<div className={css.hero__right}>
 					<div style={{ position: 'absolute' }}>
-						<img src={HeroShoes1} />
+						<img width={549} src={HeroShoes1} />
 					</div>
 					<div style={{ marginTop: '-50px', marginRight: '-148px' }}>
 						<img src={HeroBlueBg} />
@@ -35,19 +37,26 @@ const Hero = () => {
 			</div>
 
 			<div className={css.hero__cards}>
-				<div className={css.hero__cards_card}>
-					<img className={css.Arrow} src={Hero_Arrow} />
-					<img className={css.bottom_shoes} width={183} src={bottom_shoes1} />
-					<h4>
-						Adidas <br />
-						Yeezy Boost{' '}
-					</h4>
-				</div>
-				<div className={css.hero__cards_card}>
-					<img className={css.Arrow} src={Hero_Arrow} />
-					<img className={css.bottom_shoes} width={183} src={bottom_shoes2} />
-					<h4>Nike <br/>Air Max</h4>
-				</div>
+				<Link to={'hero2'}>
+					<div className={css.hero__cards_card}>
+						<img className={css.Arrow} src={Hero_Arrow} />
+						<img className={css.bottom_shoes} width={183} src={bottom_shoes1} />
+						<h4>
+							Adidas <br />
+							Yeezy Boost
+						</h4>
+					</div>
+				</Link>
+				<Link to={'hero3'}>
+					<div className={css.hero__cards_card}>
+						<img className={css.Arrow} src={Hero_Arrow} />
+						<img className={css.bottom_shoes} width={183} src={bottom_shoes2} />
+						<h4>
+							Nike <br />
+							Air Max
+						</h4>
+					</div>
+				</Link>
 			</div>
 		</div>
 	)
